@@ -1,0 +1,82 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "eigen:MPL2_only=False\nglew:fPIC=True\nglew:shared=False\nglew:with_egl=False\nglfw:fPIC=True\nglfw:shared=False\nglfw:vulkan_static=False\ngtest:build_gmock=True\ngtest:fPIC=True\ngtest:hide_symbols=False\ngtest:no_main=False\ngtest:shared=False",
+    "requires": [
+     "1",
+     "2",
+     "4",
+     "6",
+     "7"
+    ],
+    "path": "../conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "opengl/system",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "2": {
+    "ref": "glfw/3.3.4",
+    "options": "fPIC=True\nshared=False\nvulkan_static=False",
+    "package_id": "6340505dafa41af473a127b95b9c69164d638b69",
+    "prev": "0",
+    "requires": [
+     "1",
+     "3"
+    ],
+    "context": "host"
+   },
+   "3": {
+    "ref": "xorg/system",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "4": {
+    "ref": "glew/2.2.0",
+    "options": "fPIC=True\nshared=False\nwith_egl=False",
+    "package_id": "161ee116d0f37f134c366b5832500f2812dc7b50",
+    "prev": "0",
+    "requires": [
+     "1",
+     "5"
+    ],
+    "context": "host"
+   },
+   "5": {
+    "ref": "glu/system",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "1"
+    ],
+    "context": "host"
+   },
+   "6": {
+    "ref": "eigen/3.4.0",
+    "options": "MPL2_only=False",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "7": {
+    "ref": "gtest/cci.20210126",
+    "options": "build_gmock=True\nfPIC=True\nhide_symbols=False\nno_main=False\nshared=False",
+    "package_id": "fb198271744249d74b06e8b3dfae5952610962fb",
+    "prev": "0",
+    "modified": true,
+    "context": "host"
+   }
+  },
+  "revisions_enabled": false
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.cppstd=20\ncompiler.libcxx=libstdc++11\ncompiler.version=9\nos=Linux\nos_build=Linux\n[options]\n[build_requires]\n[env]\n"
+}

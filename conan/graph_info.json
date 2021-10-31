@@ -1,0 +1,58 @@
+{
+ "options": [
+  [
+   "eigen:MPL2_only",
+   "False"
+  ],
+  [
+   "glew:fPIC",
+   "True"
+  ],
+  [
+   "glew:shared",
+   "False"
+  ],
+  [
+   "glew:with_egl",
+   "False"
+  ],
+  [
+   "glfw:fPIC",
+   "True"
+  ],
+  [
+   "glfw:shared",
+   "False"
+  ],
+  [
+   "glfw:vulkan_static",
+   "False"
+  ],
+  [
+   "gtest:build_gmock",
+   "True"
+  ],
+  [
+   "gtest:fPIC",
+   "True"
+  ],
+  [
+   "gtest:hide_symbols",
+   "False"
+  ],
+  [
+   "gtest:no_main",
+   "False"
+  ],
+  [
+   "gtest:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}
