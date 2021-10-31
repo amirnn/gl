@@ -38,22 +38,22 @@ endmacro()
 #################
 ###  GLFW
 #################
-set(CONAN_GLFW_ROOT "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69")
-set(CONAN_INCLUDE_DIRS_GLFW "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/include")
-set(CONAN_LIB_DIRS_GLFW "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/lib")
+set(CONAN_GLFW_ROOT "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc")
+set(CONAN_INCLUDE_DIRS_GLFW "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/include")
+set(CONAN_LIB_DIRS_GLFW "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/lib")
 set(CONAN_BIN_DIRS_GLFW )
 set(CONAN_RES_DIRS_GLFW )
 set(CONAN_SRC_DIRS_GLFW )
-set(CONAN_BUILD_DIRS_GLFW "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/"
-			"/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/lib/cmake")
+set(CONAN_BUILD_DIRS_GLFW "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/"
+			"C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/lib/cmake")
 set(CONAN_FRAMEWORK_DIRS_GLFW )
 set(CONAN_LIBS_GLFW glfw3)
 set(CONAN_PKG_LIBS_GLFW glfw3)
-set(CONAN_SYSTEM_LIBS_GLFW m pthread dl rt)
+set(CONAN_SYSTEM_LIBS_GLFW gdi32)
 set(CONAN_FRAMEWORKS_GLFW )
 set(CONAN_FRAMEWORKS_FOUND_GLFW "")  # Will be filled later
 set(CONAN_DEFINES_GLFW )
-set(CONAN_BUILD_MODULES_PATHS_GLFW "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/lib/cmake/conan-official-glfw-targets.cmake")
+set(CONAN_BUILD_MODULES_PATHS_GLFW "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/lib/cmake/conan-official-glfw-targets.cmake")
 # COMPILE_DEFINITIONS are equal to CONAN_DEFINES without -D, for targets
 set(CONAN_COMPILE_DEFINITIONS_GLFW )
 
@@ -75,25 +75,63 @@ set(CONAN_LIBS_GLFW ${CONAN_PKG_LIBS_GLFW} ${CONAN_SYSTEM_LIBS_GLFW} ${CONAN_FRA
 
 
 #################
+###  GLAD
+#################
+set(CONAN_GLAD_ROOT "C:/Users/amirn/.conan/data/glad/0.1.34/_/_/package/473c24ae8996a862e6a24597d141497cb708b730")
+set(CONAN_INCLUDE_DIRS_GLAD "C:/Users/amirn/.conan/data/glad/0.1.34/_/_/package/473c24ae8996a862e6a24597d141497cb708b730/include")
+set(CONAN_LIB_DIRS_GLAD "C:/Users/amirn/.conan/data/glad/0.1.34/_/_/package/473c24ae8996a862e6a24597d141497cb708b730/lib")
+set(CONAN_BIN_DIRS_GLAD )
+set(CONAN_RES_DIRS_GLAD )
+set(CONAN_SRC_DIRS_GLAD )
+set(CONAN_BUILD_DIRS_GLAD "C:/Users/amirn/.conan/data/glad/0.1.34/_/_/package/473c24ae8996a862e6a24597d141497cb708b730/")
+set(CONAN_FRAMEWORK_DIRS_GLAD )
+set(CONAN_LIBS_GLAD glad)
+set(CONAN_PKG_LIBS_GLAD glad)
+set(CONAN_SYSTEM_LIBS_GLAD )
+set(CONAN_FRAMEWORKS_GLAD )
+set(CONAN_FRAMEWORKS_FOUND_GLAD "")  # Will be filled later
+set(CONAN_DEFINES_GLAD )
+set(CONAN_BUILD_MODULES_PATHS_GLAD )
+# COMPILE_DEFINITIONS are equal to CONAN_DEFINES without -D, for targets
+set(CONAN_COMPILE_DEFINITIONS_GLAD )
+
+set(CONAN_C_FLAGS_GLAD "")
+set(CONAN_CXX_FLAGS_GLAD "")
+set(CONAN_SHARED_LINKER_FLAGS_GLAD "")
+set(CONAN_EXE_LINKER_FLAGS_GLAD "")
+
+# For modern cmake targets we use the list variables (separated with ;)
+set(CONAN_C_FLAGS_GLAD_LIST "")
+set(CONAN_CXX_FLAGS_GLAD_LIST "")
+set(CONAN_SHARED_LINKER_FLAGS_GLAD_LIST "")
+set(CONAN_EXE_LINKER_FLAGS_GLAD_LIST "")
+
+# Apple Frameworks
+conan_find_apple_frameworks(CONAN_FRAMEWORKS_FOUND_GLAD "${CONAN_FRAMEWORKS_GLAD}" "_GLAD" "")
+# Append to aggregated values variable
+set(CONAN_LIBS_GLAD ${CONAN_PKG_LIBS_GLAD} ${CONAN_SYSTEM_LIBS_GLAD} ${CONAN_FRAMEWORKS_FOUND_GLAD})
+
+
+#################
 ###  GLEW
 #################
-set(CONAN_GLEW_ROOT "/home/amirnourinia/.conan/data/glew/2.2.0/_/_/package/161ee116d0f37f134c366b5832500f2812dc7b50")
-set(CONAN_INCLUDE_DIRS_GLEW "/home/amirnourinia/.conan/data/glew/2.2.0/_/_/package/161ee116d0f37f134c366b5832500f2812dc7b50/include")
-set(CONAN_LIB_DIRS_GLEW "/home/amirnourinia/.conan/data/glew/2.2.0/_/_/package/161ee116d0f37f134c366b5832500f2812dc7b50/lib")
+set(CONAN_GLEW_ROOT "C:/Users/amirn/.conan/data/glew/2.2.0/_/_/package/f923874e83d95e94b1d71b4181e264b3716ade72")
+set(CONAN_INCLUDE_DIRS_GLEW "C:/Users/amirn/.conan/data/glew/2.2.0/_/_/package/f923874e83d95e94b1d71b4181e264b3716ade72/include")
+set(CONAN_LIB_DIRS_GLEW "C:/Users/amirn/.conan/data/glew/2.2.0/_/_/package/f923874e83d95e94b1d71b4181e264b3716ade72/lib")
 set(CONAN_BIN_DIRS_GLEW )
 set(CONAN_RES_DIRS_GLEW )
 set(CONAN_SRC_DIRS_GLEW )
-set(CONAN_BUILD_DIRS_GLEW "/home/amirnourinia/.conan/data/glew/2.2.0/_/_/package/161ee116d0f37f134c366b5832500f2812dc7b50/")
+set(CONAN_BUILD_DIRS_GLEW "C:/Users/amirn/.conan/data/glew/2.2.0/_/_/package/f923874e83d95e94b1d71b4181e264b3716ade72/")
 set(CONAN_FRAMEWORK_DIRS_GLEW )
-set(CONAN_LIBS_GLEW GLEW)
-set(CONAN_PKG_LIBS_GLEW GLEW)
+set(CONAN_LIBS_GLEW libglew32)
+set(CONAN_PKG_LIBS_GLEW libglew32)
 set(CONAN_SYSTEM_LIBS_GLEW )
 set(CONAN_FRAMEWORKS_GLEW )
 set(CONAN_FRAMEWORKS_FOUND_GLEW "")  # Will be filled later
-set(CONAN_DEFINES_GLEW )
+set(CONAN_DEFINES_GLEW "-DGLEW_STATIC")
 set(CONAN_BUILD_MODULES_PATHS_GLEW )
 # COMPILE_DEFINITIONS are equal to CONAN_DEFINES without -D, for targets
-set(CONAN_COMPILE_DEFINITIONS_GLEW )
+set(CONAN_COMPILE_DEFINITIONS_GLEW "GLEW_STATIC")
 
 set(CONAN_C_FLAGS_GLEW "")
 set(CONAN_CXX_FLAGS_GLEW "")
@@ -115,17 +153,17 @@ set(CONAN_LIBS_GLEW ${CONAN_PKG_LIBS_GLEW} ${CONAN_SYSTEM_LIBS_GLEW} ${CONAN_FRA
 #################
 ###  EIGEN
 #################
-set(CONAN_EIGEN_ROOT "/home/amirnourinia/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
-set(CONAN_INCLUDE_DIRS_EIGEN "/home/amirnourinia/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/eigen3")
+set(CONAN_EIGEN_ROOT "C:/Users/amirn/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
+set(CONAN_INCLUDE_DIRS_EIGEN "C:/Users/amirn/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/eigen3")
 set(CONAN_LIB_DIRS_EIGEN )
 set(CONAN_BIN_DIRS_EIGEN )
 set(CONAN_RES_DIRS_EIGEN )
 set(CONAN_SRC_DIRS_EIGEN )
-set(CONAN_BUILD_DIRS_EIGEN "/home/amirnourinia/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
+set(CONAN_BUILD_DIRS_EIGEN "C:/Users/amirn/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
 set(CONAN_FRAMEWORK_DIRS_EIGEN )
 set(CONAN_LIBS_EIGEN )
 set(CONAN_PKG_LIBS_EIGEN )
-set(CONAN_SYSTEM_LIBS_EIGEN m)
+set(CONAN_SYSTEM_LIBS_EIGEN )
 set(CONAN_FRAMEWORKS_EIGEN )
 set(CONAN_FRAMEWORKS_FOUND_EIGEN "")  # Will be filled later
 set(CONAN_DEFINES_EIGEN )
@@ -153,17 +191,17 @@ set(CONAN_LIBS_EIGEN ${CONAN_PKG_LIBS_EIGEN} ${CONAN_SYSTEM_LIBS_EIGEN} ${CONAN_
 #################
 ###  GTEST
 #################
-set(CONAN_GTEST_ROOT "/home/amirnourinia/.conan/data/gtest/cci.20210126/_/_/package/fb198271744249d74b06e8b3dfae5952610962fb")
-set(CONAN_INCLUDE_DIRS_GTEST "/home/amirnourinia/.conan/data/gtest/cci.20210126/_/_/package/fb198271744249d74b06e8b3dfae5952610962fb/include")
-set(CONAN_LIB_DIRS_GTEST "/home/amirnourinia/.conan/data/gtest/cci.20210126/_/_/package/fb198271744249d74b06e8b3dfae5952610962fb/lib")
+set(CONAN_GTEST_ROOT "C:/Users/amirn/.conan/data/gtest/cci.20210126/_/_/package/5ad274d83035c78ba2b205e6cf4f1b317aee8e05")
+set(CONAN_INCLUDE_DIRS_GTEST "C:/Users/amirn/.conan/data/gtest/cci.20210126/_/_/package/5ad274d83035c78ba2b205e6cf4f1b317aee8e05/include")
+set(CONAN_LIB_DIRS_GTEST "C:/Users/amirn/.conan/data/gtest/cci.20210126/_/_/package/5ad274d83035c78ba2b205e6cf4f1b317aee8e05/lib")
 set(CONAN_BIN_DIRS_GTEST )
 set(CONAN_RES_DIRS_GTEST )
 set(CONAN_SRC_DIRS_GTEST )
-set(CONAN_BUILD_DIRS_GTEST "/home/amirnourinia/.conan/data/gtest/cci.20210126/_/_/package/fb198271744249d74b06e8b3dfae5952610962fb/")
+set(CONAN_BUILD_DIRS_GTEST "C:/Users/amirn/.conan/data/gtest/cci.20210126/_/_/package/5ad274d83035c78ba2b205e6cf4f1b317aee8e05/")
 set(CONAN_FRAMEWORK_DIRS_GTEST )
 set(CONAN_LIBS_GTEST gtest_main gmock_main gmock gtest)
 set(CONAN_PKG_LIBS_GTEST gtest_main gmock_main gmock gtest)
-set(CONAN_SYSTEM_LIBS_GTEST pthread)
+set(CONAN_SYSTEM_LIBS_GTEST )
 set(CONAN_FRAMEWORKS_GTEST )
 set(CONAN_FRAMEWORKS_FOUND_GTEST "")  # Will be filled later
 set(CONAN_DEFINES_GTEST )
@@ -189,65 +227,19 @@ set(CONAN_LIBS_GTEST ${CONAN_PKG_LIBS_GTEST} ${CONAN_SYSTEM_LIBS_GTEST} ${CONAN_
 
 
 #################
-###  XORG
-#################
-set(CONAN_XORG_ROOT "/home/amirnourinia/.conan/data/xorg/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
-set(CONAN_INCLUDE_DIRS_XORG "/usr/include/uuid"
-			"/usr/include/freetype2"
-			"/usr/include/libpng16")
-set(CONAN_LIB_DIRS_XORG )
-set(CONAN_BIN_DIRS_XORG )
-set(CONAN_RES_DIRS_XORG )
-set(CONAN_SRC_DIRS_XORG )
-set(CONAN_BUILD_DIRS_XORG "/home/amirnourinia/.conan/data/xorg/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
-set(CONAN_FRAMEWORK_DIRS_XORG )
-set(CONAN_LIBS_XORG )
-set(CONAN_PKG_LIBS_XORG )
-set(CONAN_SYSTEM_LIBS_XORG X11 X11-xcb xcb fontenc ICE SM Xau Xaw7 Xt Xcomposite Xcursor Xdamage Xfixes Xdmcp Xext Xft Xi Xinerama xkbfile Xmu Xmuu Xpm Xrandr Xrender XRes Xss Xtst Xv XvMC Xxf86vm xcb-xkb xcb-icccm xcb-image xcb-shm xcb-keysyms xcb-randr xcb-render xcb-render-util xcb-shape xcb-sync xcb-xfixes xcb-xinerama xcb-util xcb-dri3)
-set(CONAN_FRAMEWORKS_XORG )
-set(CONAN_FRAMEWORKS_FOUND_XORG "")  # Will be filled later
-set(CONAN_DEFINES_XORG "-D_DEFAULT_SOURCE"
-			"-D_BSD_SOURCE"
-			"-DHAS_FCHOWN"
-			"-DHAS_STICKY_DIR_BIT")
-set(CONAN_BUILD_MODULES_PATHS_XORG )
-# COMPILE_DEFINITIONS are equal to CONAN_DEFINES without -D, for targets
-set(CONAN_COMPILE_DEFINITIONS_XORG "_DEFAULT_SOURCE"
-			"_BSD_SOURCE"
-			"HAS_FCHOWN"
-			"HAS_STICKY_DIR_BIT")
-
-set(CONAN_C_FLAGS_XORG "")
-set(CONAN_CXX_FLAGS_XORG "")
-set(CONAN_SHARED_LINKER_FLAGS_XORG "")
-set(CONAN_EXE_LINKER_FLAGS_XORG "")
-
-# For modern cmake targets we use the list variables (separated with ;)
-set(CONAN_C_FLAGS_XORG_LIST "")
-set(CONAN_CXX_FLAGS_XORG_LIST "")
-set(CONAN_SHARED_LINKER_FLAGS_XORG_LIST "")
-set(CONAN_EXE_LINKER_FLAGS_XORG_LIST "")
-
-# Apple Frameworks
-conan_find_apple_frameworks(CONAN_FRAMEWORKS_FOUND_XORG "${CONAN_FRAMEWORKS_XORG}" "_XORG" "")
-# Append to aggregated values variable
-set(CONAN_LIBS_XORG ${CONAN_PKG_LIBS_XORG} ${CONAN_SYSTEM_LIBS_XORG} ${CONAN_FRAMEWORKS_FOUND_XORG})
-
-
-#################
 ###  GLU
 #################
-set(CONAN_GLU_ROOT "/home/amirnourinia/.conan/data/glu/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
+set(CONAN_GLU_ROOT "C:/Users/amirn/.conan/data/glu/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
 set(CONAN_INCLUDE_DIRS_GLU )
 set(CONAN_LIB_DIRS_GLU )
 set(CONAN_BIN_DIRS_GLU )
 set(CONAN_RES_DIRS_GLU )
 set(CONAN_SRC_DIRS_GLU )
-set(CONAN_BUILD_DIRS_GLU "/home/amirnourinia/.conan/data/glu/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
+set(CONAN_BUILD_DIRS_GLU "C:/Users/amirn/.conan/data/glu/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
 set(CONAN_FRAMEWORK_DIRS_GLU )
 set(CONAN_LIBS_GLU )
 set(CONAN_PKG_LIBS_GLU )
-set(CONAN_SYSTEM_LIBS_GLU GLU GL)
+set(CONAN_SYSTEM_LIBS_GLU Glu32)
 set(CONAN_FRAMEWORKS_GLU )
 set(CONAN_FRAMEWORKS_FOUND_GLU "")  # Will be filled later
 set(CONAN_DEFINES_GLU )
@@ -275,17 +267,17 @@ set(CONAN_LIBS_GLU ${CONAN_PKG_LIBS_GLU} ${CONAN_SYSTEM_LIBS_GLU} ${CONAN_FRAMEW
 #################
 ###  OPENGL
 #################
-set(CONAN_OPENGL_ROOT "/home/amirnourinia/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
+set(CONAN_OPENGL_ROOT "C:/Users/amirn/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
 set(CONAN_INCLUDE_DIRS_OPENGL )
 set(CONAN_LIB_DIRS_OPENGL )
 set(CONAN_BIN_DIRS_OPENGL )
 set(CONAN_RES_DIRS_OPENGL )
 set(CONAN_SRC_DIRS_OPENGL )
-set(CONAN_BUILD_DIRS_OPENGL "/home/amirnourinia/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
+set(CONAN_BUILD_DIRS_OPENGL "C:/Users/amirn/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
 set(CONAN_FRAMEWORK_DIRS_OPENGL )
 set(CONAN_LIBS_OPENGL )
 set(CONAN_PKG_LIBS_OPENGL )
-set(CONAN_SYSTEM_LIBS_OPENGL GL)
+set(CONAN_SYSTEM_LIBS_OPENGL opengl32)
 set(CONAN_FRAMEWORKS_OPENGL )
 set(CONAN_FRAMEWORKS_FOUND_OPENGL "")  # Will be filled later
 set(CONAN_DEFINES_OPENGL )
@@ -318,14 +310,13 @@ set(CONAN_PACKAGE_VERSION None)
 set(CONAN_SETTINGS_ARCH "x86_64")
 set(CONAN_SETTINGS_ARCH_BUILD "x86_64")
 set(CONAN_SETTINGS_BUILD_TYPE "Release")
-set(CONAN_SETTINGS_COMPILER "gcc")
-set(CONAN_SETTINGS_COMPILER_CPPSTD "20")
-set(CONAN_SETTINGS_COMPILER_LIBCXX "libstdc++11")
-set(CONAN_SETTINGS_COMPILER_VERSION "9")
-set(CONAN_SETTINGS_OS "Linux")
-set(CONAN_SETTINGS_OS_BUILD "Linux")
+set(CONAN_SETTINGS_COMPILER "Visual Studio")
+set(CONAN_SETTINGS_COMPILER_RUNTIME "MD")
+set(CONAN_SETTINGS_COMPILER_VERSION "16")
+set(CONAN_SETTINGS_OS "Windows")
+set(CONAN_SETTINGS_OS_BUILD "Windows")
 
-set(CONAN_DEPENDENCIES glfw glew eigen gtest xorg glu opengl)
+set(CONAN_DEPENDENCIES glfw glad glew eigen gtest glu opengl)
 # Storing original command line args (CMake helper) flags
 set(CONAN_CMD_CXX_FLAGS ${CONAN_CXX_FLAGS})
 
@@ -333,37 +324,33 @@ set(CONAN_CMD_SHARED_LINKER_FLAGS ${CONAN_SHARED_LINKER_FLAGS})
 set(CONAN_CMD_C_FLAGS ${CONAN_C_FLAGS})
 # Defining accumulated conan variables for all deps
 
-set(CONAN_INCLUDE_DIRS "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/include"
-			"/home/amirnourinia/.conan/data/glew/2.2.0/_/_/package/161ee116d0f37f134c366b5832500f2812dc7b50/include"
-			"/home/amirnourinia/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/eigen3"
-			"/home/amirnourinia/.conan/data/gtest/cci.20210126/_/_/package/fb198271744249d74b06e8b3dfae5952610962fb/include"
-			"/usr/include/uuid"
-			"/usr/include/freetype2"
-			"/usr/include/libpng16" ${CONAN_INCLUDE_DIRS})
-set(CONAN_LIB_DIRS "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/lib"
-			"/home/amirnourinia/.conan/data/glew/2.2.0/_/_/package/161ee116d0f37f134c366b5832500f2812dc7b50/lib"
-			"/home/amirnourinia/.conan/data/gtest/cci.20210126/_/_/package/fb198271744249d74b06e8b3dfae5952610962fb/lib" ${CONAN_LIB_DIRS})
+set(CONAN_INCLUDE_DIRS "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/include"
+			"C:/Users/amirn/.conan/data/glad/0.1.34/_/_/package/473c24ae8996a862e6a24597d141497cb708b730/include"
+			"C:/Users/amirn/.conan/data/glew/2.2.0/_/_/package/f923874e83d95e94b1d71b4181e264b3716ade72/include"
+			"C:/Users/amirn/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include/eigen3"
+			"C:/Users/amirn/.conan/data/gtest/cci.20210126/_/_/package/5ad274d83035c78ba2b205e6cf4f1b317aee8e05/include" ${CONAN_INCLUDE_DIRS})
+set(CONAN_LIB_DIRS "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/lib"
+			"C:/Users/amirn/.conan/data/glad/0.1.34/_/_/package/473c24ae8996a862e6a24597d141497cb708b730/lib"
+			"C:/Users/amirn/.conan/data/glew/2.2.0/_/_/package/f923874e83d95e94b1d71b4181e264b3716ade72/lib"
+			"C:/Users/amirn/.conan/data/gtest/cci.20210126/_/_/package/5ad274d83035c78ba2b205e6cf4f1b317aee8e05/lib" ${CONAN_LIB_DIRS})
 set(CONAN_BIN_DIRS  ${CONAN_BIN_DIRS})
 set(CONAN_RES_DIRS  ${CONAN_RES_DIRS})
 set(CONAN_FRAMEWORK_DIRS  ${CONAN_FRAMEWORK_DIRS})
-set(CONAN_LIBS glfw3 GLEW gtest_main gmock_main gmock gtest ${CONAN_LIBS})
-set(CONAN_PKG_LIBS glfw3 GLEW gtest_main gmock_main gmock gtest ${CONAN_PKG_LIBS})
-set(CONAN_SYSTEM_LIBS dl rt m pthread X11 X11-xcb xcb fontenc ICE SM Xau Xaw7 Xt Xcomposite Xcursor Xdamage Xfixes Xdmcp Xext Xft Xi Xinerama xkbfile Xmu Xmuu Xpm Xrandr Xrender XRes Xss Xtst Xv XvMC Xxf86vm xcb-xkb xcb-icccm xcb-image xcb-shm xcb-keysyms xcb-randr xcb-render xcb-render-util xcb-shape xcb-sync xcb-xfixes xcb-xinerama xcb-util xcb-dri3 GLU GL ${CONAN_SYSTEM_LIBS})
+set(CONAN_LIBS glfw3 glad libglew32 gtest_main gmock_main gmock gtest ${CONAN_LIBS})
+set(CONAN_PKG_LIBS glfw3 glad libglew32 gtest_main gmock_main gmock gtest ${CONAN_PKG_LIBS})
+set(CONAN_SYSTEM_LIBS gdi32 Glu32 opengl32 ${CONAN_SYSTEM_LIBS})
 set(CONAN_FRAMEWORKS  ${CONAN_FRAMEWORKS})
 set(CONAN_FRAMEWORKS_FOUND "")  # Will be filled later
-set(CONAN_DEFINES "-D_DEFAULT_SOURCE"
-			"-D_BSD_SOURCE"
-			"-DHAS_FCHOWN"
-			"-DHAS_STICKY_DIR_BIT" ${CONAN_DEFINES})
-set(CONAN_BUILD_MODULES_PATHS "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/lib/cmake/conan-official-glfw-targets.cmake" ${CONAN_BUILD_MODULES_PATHS})
-set(CONAN_CMAKE_MODULE_PATH "/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/"
-			"/home/amirnourinia/.conan/data/glfw/3.3.4/_/_/package/6340505dafa41af473a127b95b9c69164d638b69/lib/cmake"
-			"/home/amirnourinia/.conan/data/glew/2.2.0/_/_/package/161ee116d0f37f134c366b5832500f2812dc7b50/"
-			"/home/amirnourinia/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
-			"/home/amirnourinia/.conan/data/gtest/cci.20210126/_/_/package/fb198271744249d74b06e8b3dfae5952610962fb/"
-			"/home/amirnourinia/.conan/data/xorg/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
-			"/home/amirnourinia/.conan/data/glu/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
-			"/home/amirnourinia/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/" ${CONAN_CMAKE_MODULE_PATH})
+set(CONAN_DEFINES "-DGLEW_STATIC" ${CONAN_DEFINES})
+set(CONAN_BUILD_MODULES_PATHS "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/lib/cmake/conan-official-glfw-targets.cmake" ${CONAN_BUILD_MODULES_PATHS})
+set(CONAN_CMAKE_MODULE_PATH "C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/"
+			"C:/Users/amirn/.conan/data/glfw/3.3.4/_/_/package/d3cffeefc8c8bcb6be8abdd182cb1b56fc81bacc/lib/cmake"
+			"C:/Users/amirn/.conan/data/glad/0.1.34/_/_/package/473c24ae8996a862e6a24597d141497cb708b730/"
+			"C:/Users/amirn/.conan/data/glew/2.2.0/_/_/package/f923874e83d95e94b1d71b4181e264b3716ade72/"
+			"C:/Users/amirn/.conan/data/eigen/3.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
+			"C:/Users/amirn/.conan/data/gtest/cci.20210126/_/_/package/5ad274d83035c78ba2b205e6cf4f1b317aee8e05/"
+			"C:/Users/amirn/.conan/data/glu/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
+			"C:/Users/amirn/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/" ${CONAN_CMAKE_MODULE_PATH})
 
 set(CONAN_CXX_FLAGS " ${CONAN_CXX_FLAGS}")
 set(CONAN_SHARED_LINKER_FLAGS " ${CONAN_SHARED_LINKER_FLAGS}")
@@ -387,27 +374,27 @@ macro(conan_define_targets)
     set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} ${CONAN_CMD_SHARED_LINKER_FLAGS}")
 
 
-    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES "${CONAN_SYSTEM_LIBS_GLFW} ${CONAN_FRAMEWORKS_FOUND_GLFW} CONAN_PKG::opengl CONAN_PKG::xorg")
+    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES "${CONAN_SYSTEM_LIBS_GLFW} ${CONAN_FRAMEWORKS_FOUND_GLFW} CONAN_PKG::opengl")
     string(REPLACE " " ";" _CONAN_PKG_LIBS_GLFW_DEPENDENCIES "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES}")
     conan_package_library_targets("${CONAN_PKG_LIBS_GLFW}" "${CONAN_LIB_DIRS_GLFW}"
                                   CONAN_PACKAGE_TARGETS_GLFW "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES}"
                                   "" glfw)
-    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_DEBUG "${CONAN_SYSTEM_LIBS_GLFW_DEBUG} ${CONAN_FRAMEWORKS_FOUND_GLFW_DEBUG} CONAN_PKG::opengl CONAN_PKG::xorg")
+    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_DEBUG "${CONAN_SYSTEM_LIBS_GLFW_DEBUG} ${CONAN_FRAMEWORKS_FOUND_GLFW_DEBUG} CONAN_PKG::opengl")
     string(REPLACE " " ";" _CONAN_PKG_LIBS_GLFW_DEPENDENCIES_DEBUG "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_DEBUG}")
     conan_package_library_targets("${CONAN_PKG_LIBS_GLFW_DEBUG}" "${CONAN_LIB_DIRS_GLFW_DEBUG}"
                                   CONAN_PACKAGE_TARGETS_GLFW_DEBUG "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_DEBUG}"
                                   "debug" glfw)
-    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELEASE "${CONAN_SYSTEM_LIBS_GLFW_RELEASE} ${CONAN_FRAMEWORKS_FOUND_GLFW_RELEASE} CONAN_PKG::opengl CONAN_PKG::xorg")
+    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELEASE "${CONAN_SYSTEM_LIBS_GLFW_RELEASE} ${CONAN_FRAMEWORKS_FOUND_GLFW_RELEASE} CONAN_PKG::opengl")
     string(REPLACE " " ";" _CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELEASE "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELEASE}")
     conan_package_library_targets("${CONAN_PKG_LIBS_GLFW_RELEASE}" "${CONAN_LIB_DIRS_GLFW_RELEASE}"
                                   CONAN_PACKAGE_TARGETS_GLFW_RELEASE "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELEASE}"
                                   "release" glfw)
-    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELWITHDEBINFO "${CONAN_SYSTEM_LIBS_GLFW_RELWITHDEBINFO} ${CONAN_FRAMEWORKS_FOUND_GLFW_RELWITHDEBINFO} CONAN_PKG::opengl CONAN_PKG::xorg")
+    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELWITHDEBINFO "${CONAN_SYSTEM_LIBS_GLFW_RELWITHDEBINFO} ${CONAN_FRAMEWORKS_FOUND_GLFW_RELWITHDEBINFO} CONAN_PKG::opengl")
     string(REPLACE " " ";" _CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELWITHDEBINFO "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELWITHDEBINFO}")
     conan_package_library_targets("${CONAN_PKG_LIBS_GLFW_RELWITHDEBINFO}" "${CONAN_LIB_DIRS_GLFW_RELWITHDEBINFO}"
                                   CONAN_PACKAGE_TARGETS_GLFW_RELWITHDEBINFO "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_RELWITHDEBINFO}"
                                   "relwithdebinfo" glfw)
-    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_MINSIZEREL "${CONAN_SYSTEM_LIBS_GLFW_MINSIZEREL} ${CONAN_FRAMEWORKS_FOUND_GLFW_MINSIZEREL} CONAN_PKG::opengl CONAN_PKG::xorg")
+    set(_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_MINSIZEREL "${CONAN_SYSTEM_LIBS_GLFW_MINSIZEREL} ${CONAN_FRAMEWORKS_FOUND_GLFW_MINSIZEREL} CONAN_PKG::opengl")
     string(REPLACE " " ";" _CONAN_PKG_LIBS_GLFW_DEPENDENCIES_MINSIZEREL "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_MINSIZEREL}")
     conan_package_library_targets("${CONAN_PKG_LIBS_GLFW_MINSIZEREL}" "${CONAN_LIB_DIRS_GLFW_MINSIZEREL}"
                                   CONAN_PACKAGE_TARGETS_GLFW_MINSIZEREL "${_CONAN_PKG_LIBS_GLFW_DEPENDENCIES_MINSIZEREL}"
@@ -455,6 +442,76 @@ macro(conan_define_targets)
                                                                   $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_GLFW_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_GLFW_RELWITHDEBINFO_LIST}>
                                                                   $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_GLFW_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_GLFW_MINSIZEREL_LIST}>
                                                                   $<$<CONFIG:Debug>:${CONAN_C_FLAGS_GLFW_DEBUG_LIST}  ${CONAN_CXX_FLAGS_GLFW_DEBUG_LIST}>)
+
+
+    set(_CONAN_PKG_LIBS_GLAD_DEPENDENCIES "${CONAN_SYSTEM_LIBS_GLAD} ${CONAN_FRAMEWORKS_FOUND_GLAD} ")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_GLAD_DEPENDENCIES "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_GLAD}" "${CONAN_LIB_DIRS_GLAD}"
+                                  CONAN_PACKAGE_TARGETS_GLAD "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES}"
+                                  "" glad)
+    set(_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_DEBUG "${CONAN_SYSTEM_LIBS_GLAD_DEBUG} ${CONAN_FRAMEWORKS_FOUND_GLAD_DEBUG} ")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_GLAD_DEPENDENCIES_DEBUG "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_DEBUG}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_GLAD_DEBUG}" "${CONAN_LIB_DIRS_GLAD_DEBUG}"
+                                  CONAN_PACKAGE_TARGETS_GLAD_DEBUG "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_DEBUG}"
+                                  "debug" glad)
+    set(_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELEASE "${CONAN_SYSTEM_LIBS_GLAD_RELEASE} ${CONAN_FRAMEWORKS_FOUND_GLAD_RELEASE} ")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELEASE "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELEASE}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_GLAD_RELEASE}" "${CONAN_LIB_DIRS_GLAD_RELEASE}"
+                                  CONAN_PACKAGE_TARGETS_GLAD_RELEASE "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELEASE}"
+                                  "release" glad)
+    set(_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELWITHDEBINFO "${CONAN_SYSTEM_LIBS_GLAD_RELWITHDEBINFO} ${CONAN_FRAMEWORKS_FOUND_GLAD_RELWITHDEBINFO} ")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELWITHDEBINFO "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELWITHDEBINFO}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_GLAD_RELWITHDEBINFO}" "${CONAN_LIB_DIRS_GLAD_RELWITHDEBINFO}"
+                                  CONAN_PACKAGE_TARGETS_GLAD_RELWITHDEBINFO "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELWITHDEBINFO}"
+                                  "relwithdebinfo" glad)
+    set(_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_MINSIZEREL "${CONAN_SYSTEM_LIBS_GLAD_MINSIZEREL} ${CONAN_FRAMEWORKS_FOUND_GLAD_MINSIZEREL} ")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_GLAD_DEPENDENCIES_MINSIZEREL "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_MINSIZEREL}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_GLAD_MINSIZEREL}" "${CONAN_LIB_DIRS_GLAD_MINSIZEREL}"
+                                  CONAN_PACKAGE_TARGETS_GLAD_MINSIZEREL "${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_MINSIZEREL}"
+                                  "minsizerel" glad)
+
+    add_library(CONAN_PKG::glad INTERFACE IMPORTED)
+
+    # Property INTERFACE_LINK_FLAGS do not work, necessary to add to INTERFACE_LINK_LIBRARIES
+    set_property(TARGET CONAN_PKG::glad PROPERTY INTERFACE_LINK_LIBRARIES ${CONAN_PACKAGE_TARGETS_GLAD} ${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_GLAD_LIST}>
+
+                                                                 $<$<CONFIG:Release>:${CONAN_PACKAGE_TARGETS_GLAD_RELEASE} ${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELEASE}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_RELEASE_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_RELEASE_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_GLAD_RELEASE_LIST}>>
+
+                                                                 $<$<CONFIG:RelWithDebInfo>:${CONAN_PACKAGE_TARGETS_GLAD_RELWITHDEBINFO} ${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_RELWITHDEBINFO}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_RELWITHDEBINFO_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_RELWITHDEBINFO_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_GLAD_RELWITHDEBINFO_LIST}>>
+
+                                                                 $<$<CONFIG:MinSizeRel>:${CONAN_PACKAGE_TARGETS_GLAD_MINSIZEREL} ${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_MINSIZEREL}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_MINSIZEREL_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_MINSIZEREL_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_GLAD_MINSIZEREL_LIST}>>
+
+                                                                 $<$<CONFIG:Debug>:${CONAN_PACKAGE_TARGETS_GLAD_DEBUG} ${_CONAN_PKG_LIBS_GLAD_DEPENDENCIES_DEBUG}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_DEBUG_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_GLAD_DEBUG_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_GLAD_DEBUG_LIST}>>)
+    set_property(TARGET CONAN_PKG::glad PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CONAN_INCLUDE_DIRS_GLAD}
+                                                                      $<$<CONFIG:Release>:${CONAN_INCLUDE_DIRS_GLAD_RELEASE}>
+                                                                      $<$<CONFIG:RelWithDebInfo>:${CONAN_INCLUDE_DIRS_GLAD_RELWITHDEBINFO}>
+                                                                      $<$<CONFIG:MinSizeRel>:${CONAN_INCLUDE_DIRS_GLAD_MINSIZEREL}>
+                                                                      $<$<CONFIG:Debug>:${CONAN_INCLUDE_DIRS_GLAD_DEBUG}>)
+    set_property(TARGET CONAN_PKG::glad PROPERTY INTERFACE_COMPILE_DEFINITIONS ${CONAN_COMPILE_DEFINITIONS_GLAD}
+                                                                      $<$<CONFIG:Release>:${CONAN_COMPILE_DEFINITIONS_GLAD_RELEASE}>
+                                                                      $<$<CONFIG:RelWithDebInfo>:${CONAN_COMPILE_DEFINITIONS_GLAD_RELWITHDEBINFO}>
+                                                                      $<$<CONFIG:MinSizeRel>:${CONAN_COMPILE_DEFINITIONS_GLAD_MINSIZEREL}>
+                                                                      $<$<CONFIG:Debug>:${CONAN_COMPILE_DEFINITIONS_GLAD_DEBUG}>)
+    set_property(TARGET CONAN_PKG::glad PROPERTY INTERFACE_COMPILE_OPTIONS ${CONAN_C_FLAGS_GLAD_LIST} ${CONAN_CXX_FLAGS_GLAD_LIST}
+                                                                  $<$<CONFIG:Release>:${CONAN_C_FLAGS_GLAD_RELEASE_LIST} ${CONAN_CXX_FLAGS_GLAD_RELEASE_LIST}>
+                                                                  $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_GLAD_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_GLAD_RELWITHDEBINFO_LIST}>
+                                                                  $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_GLAD_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_GLAD_MINSIZEREL_LIST}>
+                                                                  $<$<CONFIG:Debug>:${CONAN_C_FLAGS_GLAD_DEBUG_LIST}  ${CONAN_CXX_FLAGS_GLAD_DEBUG_LIST}>)
 
 
     set(_CONAN_PKG_LIBS_GLEW_DEPENDENCIES "${CONAN_SYSTEM_LIBS_GLEW} ${CONAN_FRAMEWORKS_FOUND_GLEW} CONAN_PKG::opengl CONAN_PKG::glu")
@@ -667,76 +724,6 @@ macro(conan_define_targets)
                                                                   $<$<CONFIG:Debug>:${CONAN_C_FLAGS_GTEST_DEBUG_LIST}  ${CONAN_CXX_FLAGS_GTEST_DEBUG_LIST}>)
 
 
-    set(_CONAN_PKG_LIBS_XORG_DEPENDENCIES "${CONAN_SYSTEM_LIBS_XORG} ${CONAN_FRAMEWORKS_FOUND_XORG} ")
-    string(REPLACE " " ";" _CONAN_PKG_LIBS_XORG_DEPENDENCIES "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES}")
-    conan_package_library_targets("${CONAN_PKG_LIBS_XORG}" "${CONAN_LIB_DIRS_XORG}"
-                                  CONAN_PACKAGE_TARGETS_XORG "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES}"
-                                  "" xorg)
-    set(_CONAN_PKG_LIBS_XORG_DEPENDENCIES_DEBUG "${CONAN_SYSTEM_LIBS_XORG_DEBUG} ${CONAN_FRAMEWORKS_FOUND_XORG_DEBUG} ")
-    string(REPLACE " " ";" _CONAN_PKG_LIBS_XORG_DEPENDENCIES_DEBUG "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_DEBUG}")
-    conan_package_library_targets("${CONAN_PKG_LIBS_XORG_DEBUG}" "${CONAN_LIB_DIRS_XORG_DEBUG}"
-                                  CONAN_PACKAGE_TARGETS_XORG_DEBUG "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_DEBUG}"
-                                  "debug" xorg)
-    set(_CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELEASE "${CONAN_SYSTEM_LIBS_XORG_RELEASE} ${CONAN_FRAMEWORKS_FOUND_XORG_RELEASE} ")
-    string(REPLACE " " ";" _CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELEASE "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELEASE}")
-    conan_package_library_targets("${CONAN_PKG_LIBS_XORG_RELEASE}" "${CONAN_LIB_DIRS_XORG_RELEASE}"
-                                  CONAN_PACKAGE_TARGETS_XORG_RELEASE "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELEASE}"
-                                  "release" xorg)
-    set(_CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELWITHDEBINFO "${CONAN_SYSTEM_LIBS_XORG_RELWITHDEBINFO} ${CONAN_FRAMEWORKS_FOUND_XORG_RELWITHDEBINFO} ")
-    string(REPLACE " " ";" _CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELWITHDEBINFO "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELWITHDEBINFO}")
-    conan_package_library_targets("${CONAN_PKG_LIBS_XORG_RELWITHDEBINFO}" "${CONAN_LIB_DIRS_XORG_RELWITHDEBINFO}"
-                                  CONAN_PACKAGE_TARGETS_XORG_RELWITHDEBINFO "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELWITHDEBINFO}"
-                                  "relwithdebinfo" xorg)
-    set(_CONAN_PKG_LIBS_XORG_DEPENDENCIES_MINSIZEREL "${CONAN_SYSTEM_LIBS_XORG_MINSIZEREL} ${CONAN_FRAMEWORKS_FOUND_XORG_MINSIZEREL} ")
-    string(REPLACE " " ";" _CONAN_PKG_LIBS_XORG_DEPENDENCIES_MINSIZEREL "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_MINSIZEREL}")
-    conan_package_library_targets("${CONAN_PKG_LIBS_XORG_MINSIZEREL}" "${CONAN_LIB_DIRS_XORG_MINSIZEREL}"
-                                  CONAN_PACKAGE_TARGETS_XORG_MINSIZEREL "${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_MINSIZEREL}"
-                                  "minsizerel" xorg)
-
-    add_library(CONAN_PKG::xorg INTERFACE IMPORTED)
-
-    # Property INTERFACE_LINK_FLAGS do not work, necessary to add to INTERFACE_LINK_LIBRARIES
-    set_property(TARGET CONAN_PKG::xorg PROPERTY INTERFACE_LINK_LIBRARIES ${CONAN_PACKAGE_TARGETS_XORG} ${_CONAN_PKG_LIBS_XORG_DEPENDENCIES}
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_XORG_LIST}>
-
-                                                                 $<$<CONFIG:Release>:${CONAN_PACKAGE_TARGETS_XORG_RELEASE} ${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELEASE}
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_RELEASE_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_RELEASE_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_XORG_RELEASE_LIST}>>
-
-                                                                 $<$<CONFIG:RelWithDebInfo>:${CONAN_PACKAGE_TARGETS_XORG_RELWITHDEBINFO} ${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_RELWITHDEBINFO}
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_RELWITHDEBINFO_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_RELWITHDEBINFO_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_XORG_RELWITHDEBINFO_LIST}>>
-
-                                                                 $<$<CONFIG:MinSizeRel>:${CONAN_PACKAGE_TARGETS_XORG_MINSIZEREL} ${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_MINSIZEREL}
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_MINSIZEREL_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_MINSIZEREL_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_XORG_MINSIZEREL_LIST}>>
-
-                                                                 $<$<CONFIG:Debug>:${CONAN_PACKAGE_TARGETS_XORG_DEBUG} ${_CONAN_PKG_LIBS_XORG_DEPENDENCIES_DEBUG}
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_DEBUG_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_XORG_DEBUG_LIST}>
-                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_XORG_DEBUG_LIST}>>)
-    set_property(TARGET CONAN_PKG::xorg PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CONAN_INCLUDE_DIRS_XORG}
-                                                                      $<$<CONFIG:Release>:${CONAN_INCLUDE_DIRS_XORG_RELEASE}>
-                                                                      $<$<CONFIG:RelWithDebInfo>:${CONAN_INCLUDE_DIRS_XORG_RELWITHDEBINFO}>
-                                                                      $<$<CONFIG:MinSizeRel>:${CONAN_INCLUDE_DIRS_XORG_MINSIZEREL}>
-                                                                      $<$<CONFIG:Debug>:${CONAN_INCLUDE_DIRS_XORG_DEBUG}>)
-    set_property(TARGET CONAN_PKG::xorg PROPERTY INTERFACE_COMPILE_DEFINITIONS ${CONAN_COMPILE_DEFINITIONS_XORG}
-                                                                      $<$<CONFIG:Release>:${CONAN_COMPILE_DEFINITIONS_XORG_RELEASE}>
-                                                                      $<$<CONFIG:RelWithDebInfo>:${CONAN_COMPILE_DEFINITIONS_XORG_RELWITHDEBINFO}>
-                                                                      $<$<CONFIG:MinSizeRel>:${CONAN_COMPILE_DEFINITIONS_XORG_MINSIZEREL}>
-                                                                      $<$<CONFIG:Debug>:${CONAN_COMPILE_DEFINITIONS_XORG_DEBUG}>)
-    set_property(TARGET CONAN_PKG::xorg PROPERTY INTERFACE_COMPILE_OPTIONS ${CONAN_C_FLAGS_XORG_LIST} ${CONAN_CXX_FLAGS_XORG_LIST}
-                                                                  $<$<CONFIG:Release>:${CONAN_C_FLAGS_XORG_RELEASE_LIST} ${CONAN_CXX_FLAGS_XORG_RELEASE_LIST}>
-                                                                  $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_XORG_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_XORG_RELWITHDEBINFO_LIST}>
-                                                                  $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_XORG_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_XORG_MINSIZEREL_LIST}>
-                                                                  $<$<CONFIG:Debug>:${CONAN_C_FLAGS_XORG_DEBUG_LIST}  ${CONAN_CXX_FLAGS_XORG_DEBUG_LIST}>)
-
-
     set(_CONAN_PKG_LIBS_GLU_DEPENDENCIES "${CONAN_SYSTEM_LIBS_GLU} ${CONAN_FRAMEWORKS_FOUND_GLU} CONAN_PKG::opengl")
     string(REPLACE " " ";" _CONAN_PKG_LIBS_GLU_DEPENDENCIES "${_CONAN_PKG_LIBS_GLU_DEPENDENCIES}")
     conan_package_library_targets("${CONAN_PKG_LIBS_GLU}" "${CONAN_LIB_DIRS_GLU}"
@@ -876,7 +863,7 @@ macro(conan_define_targets)
                                                                   $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_OPENGL_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_OPENGL_MINSIZEREL_LIST}>
                                                                   $<$<CONFIG:Debug>:${CONAN_C_FLAGS_OPENGL_DEBUG_LIST}  ${CONAN_CXX_FLAGS_OPENGL_DEBUG_LIST}>)
 
-    set(CONAN_TARGETS CONAN_PKG::glfw CONAN_PKG::glew CONAN_PKG::eigen CONAN_PKG::gtest CONAN_PKG::xorg CONAN_PKG::glu CONAN_PKG::opengl)
+    set(CONAN_TARGETS CONAN_PKG::glfw CONAN_PKG::glad CONAN_PKG::glew CONAN_PKG::eigen CONAN_PKG::gtest CONAN_PKG::glu CONAN_PKG::opengl)
 
 endmacro()
 
